@@ -7,7 +7,7 @@ $app->get('/hello/{name}', function ($name) use ($app) {
     $startTime = microtime(true);
     $counter=0;
     while($counter == 1000000000000){
-        serialize(git $name);
+        serialize($name);
         $counter++;
     }
     $endTime = microtime(true);
